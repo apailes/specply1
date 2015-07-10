@@ -63,6 +63,9 @@
                                     <field name="LIGHT">BLUE</field>
                                   </block>
                                 </value>
+                                <next>
+                                  <block type="movement_stop" id="123"></block>
+                                </next>
                               </block>
                             </next>
                           </block>
