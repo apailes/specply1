@@ -1,1 +1,42 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="1" inline="false" x="30" y="53">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="2">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="9" inline="false">
+        <value name="IF0">
+          <block type="sensor_spectrometer" id="26">
+            <field name="LIGHT">YELLOW</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="multimedia_playwav" id="39">
+            <field name="WAV">100</field>
+            <next>
+              <block type="robot_delay" id="50" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="57">
+                    <field name="NUM">500</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="robot_delay" id="59" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="66">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
