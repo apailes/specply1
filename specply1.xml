@@ -34,37 +34,4 @@
     </statement>
   </block>
   <block type="robot_delay" id="203" inline="true" x="-142" y="67"></block>
-  <block type="oled_cleardisplay" id="65" x="605" y="236">
-    <next>
-      <block type="oled_setcursor" id="74" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="81">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-        <value name="STARTY">
-          <block type="math_number" id="88">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-        <next>
-          <block type="oled_drawtext" id="97">
-            <field name="TEXT">Spect = </field>
-            <next>
-              <block type="oled_drawnumber" id="106" inline="true">
-                <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="113">
-                    <field name="LIGHT">BLUE</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_stop" id="123"></block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
-  </block>
 </xml>
