@@ -1,0 +1,10 @@
+{
+    "name": "specply1",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "specply1.xml",
+    "author": "apailes",
+    "minimum_firmware_version": 42
+}
