@@ -7,28 +7,38 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="98" inline="false">
+      <block type="controls_if" id="3" inline="false">
         <mutation else="1"></mutation>
         <value name="IF0">
-          <block type="sensor_spectrometer" id="26">
+          <block type="sensor_spectrometer" id="10">
             <field name="LIGHT">YELLOW</field>
           </block>
         </value>
         <statement name="DO0">
-          <block type="robot_delay" id="50" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="57">
-                <field name="NUM">200</field>
+          <block type="led_select" id="21" inline="true">
+            <field name="ACTION">FLASH</field>
+            <value name="LED">
+              <block type="math_number" id="28">
+                <field name="NUM">500</field>
               </block>
             </value>
+            <next>
+              <block type="robot_delay" id="5" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="6">
+                    <field name="NUM">200</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="76">
+          <block type="movement_forward" id="7">
             <next>
-              <block type="robot_delay" id="78" inline="true">
+              <block type="robot_delay" id="8" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="85">
+                  <block type="math_number" id="9">
                     <field name="NUM">200</field>
                   </block>
                 </value>
