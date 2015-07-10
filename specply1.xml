@@ -31,60 +31,7 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="123">
-                        <next>
-                          <block type="controls_if" id="3" inline="false">
-                            <mutation else="1"></mutation>
-                            <value name="IF0">
-                              <block type="logic_compare" id="18" inline="true">
-                                <field name="OP">LT</field>
-                                <value name="A">
-                                  <block type="sensor_spectrometer" id="4">
-                                    <field name="LIGHT">BLUE</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="25">
-                                    <field name="NUM">85</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <statement name="DO0">
-                              <block type="led_select" id="5" inline="true">
-                                <field name="ACTION">FLASH</field>
-                                <value name="LED">
-                                  <block type="math_number" id="6">
-                                    <field name="NUM">500</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="robot_delay" id="7" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="8">
-                                        <field name="NUM">500</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </statement>
-                            <statement name="ELSE">
-                              <block type="movement_forward" id="9">
-                                <next>
-                                  <block type="robot_delay" id="10" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="11">
-                                        <field name="NUM">100</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </statement>
-                          </block>
-                        </next>
-                      </block>
+                      <block type="movement_stop" id="123"></block>
                     </next>
                   </block>
                 </next>
